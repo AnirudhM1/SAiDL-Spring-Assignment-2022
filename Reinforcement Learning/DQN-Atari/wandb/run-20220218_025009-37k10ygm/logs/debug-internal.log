@@ -1,0 +1,158 @@
+2022-02-18 02:50:11,371 INFO    MainThread:34608 [internal.py:wandb_internal():89] W&B internal server running at pid: 34608, started at: 2022-02-18 02:50:11.370327
+2022-02-18 02:50:11,373 INFO    WriterThread:34608 [datastore.py:open_for_write():77] open: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\run-37k10ygm.wandb
+2022-02-18 02:50:11,373 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: check_version
+2022-02-18 02:50:11,377 DEBUG   SenderThread:34608 [sender.py:send():235] send: header
+2022-02-18 02:50:11,378 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: check_version
+2022-02-18 02:50:11,542 DEBUG   SenderThread:34608 [sender.py:send():235] send: run
+2022-02-18 02:50:11,894 INFO    SenderThread:34608 [dir_watcher.py:__init__():169] watching files in: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files
+2022-02-18 02:50:11,894 INFO    SenderThread:34608 [sender.py:_start_run_threads():809] run started: 37k10ygm with start time 1645132810
+2022-02-18 02:50:11,895 DEBUG   SenderThread:34608 [sender.py:send():235] send: summary
+2022-02-18 02:50:11,895 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: run_start
+2022-02-18 02:50:11,895 INFO    SenderThread:34608 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-18 02:50:11,915 DEBUG   HandlerThread:34608 [meta.py:__init__():36] meta init
+2022-02-18 02:50:11,915 DEBUG   HandlerThread:34608 [meta.py:__init__():50] meta init done
+2022-02-18 02:50:11,915 DEBUG   HandlerThread:34608 [meta.py:probe():210] probe
+2022-02-18 02:50:11,991 DEBUG   HandlerThread:34608 [meta.py:_setup_git():200] setup git
+2022-02-18 02:50:12,084 DEBUG   HandlerThread:34608 [meta.py:_setup_git():207] setup git done
+2022-02-18 02:50:12,084 DEBUG   HandlerThread:34608 [meta.py:_save_pip():54] save pip
+2022-02-18 02:50:12,085 DEBUG   HandlerThread:34608 [meta.py:_save_pip():68] save pip done
+2022-02-18 02:50:12,085 DEBUG   HandlerThread:34608 [meta.py:_save_conda():75] save conda
+2022-02-18 02:50:12,091 ERROR   HandlerThread:34608 [meta.py:_save_conda():84] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\wandb\sdk\internal\meta.py", line 80, in _save_conda
+    subprocess.call(
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2022-02-18 02:50:12,092 DEBUG   HandlerThread:34608 [meta.py:_save_conda():85] save conda done
+2022-02-18 02:50:12,092 DEBUG   HandlerThread:34608 [meta.py:probe():248] probe done
+2022-02-18 02:50:12,099 DEBUG   SenderThread:34608 [sender.py:send():235] send: files
+2022-02-18 02:50:12,099 INFO    SenderThread:34608 [sender.py:_save_file():944] saving file wandb-metadata.json with policy now
+2022-02-18 02:50:12,113 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: stop_status
+2022-02-18 02:50:12,113 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: stop_status
+2022-02-18 02:50:12,640 DEBUG   SenderThread:34608 [sender.py:send():235] send: telemetry
+2022-02-18 02:50:12,640 DEBUG   SenderThread:34608 [sender.py:send():235] send: exit
+2022-02-18 02:50:12,640 INFO    SenderThread:34608 [sender.py:send_exit():371] handling exit code: 1
+2022-02-18 02:50:12,640 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:12,640 INFO    SenderThread:34608 [sender.py:send_exit():373] handling runtime: 0
+2022-02-18 02:50:12,641 INFO    SenderThread:34608 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-18 02:50:12,642 INFO    SenderThread:34608 [sender.py:send_exit():379] send defer
+2022-02-18 02:50:12,642 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:12,642 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:12,642 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-18 02:50:12,642 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:12,642 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-18 02:50:12,642 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 1
+2022-02-18 02:50:12,643 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:12,643 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-18 02:50:12,777 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:12,777 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:12,777 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-18 02:50:12,778 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 2
+2022-02-18 02:50:12,778 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:12,778 DEBUG   SenderThread:34608 [sender.py:send():235] send: stats
+2022-02-18 02:50:12,779 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:12,779 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-18 02:50:12,779 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:12,779 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-18 02:50:12,779 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 3
+2022-02-18 02:50:12,779 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:12,779 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-18 02:50:12,780 DEBUG   SenderThread:34608 [sender.py:send():235] send: summary
+2022-02-18 02:50:12,780 INFO    SenderThread:34608 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-18 02:50:12,781 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:12,781 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-18 02:50:12,781 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 4
+2022-02-18 02:50:12,781 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:12,781 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-18 02:50:12,781 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:12,781 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-18 02:50:12,882 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:12,899 INFO    Thread-12 :34608 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\requirements.txt
+2022-02-18 02:50:12,899 INFO    Thread-12 :34608 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\wandb-metadata.json
+2022-02-18 02:50:12,900 INFO    Thread-12 :34608 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\output.log
+2022-02-18 02:50:12,900 INFO    Thread-12 :34608 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\conda-environment.yaml
+2022-02-18 02:50:12,900 INFO    Thread-12 :34608 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\wandb-summary.json
+2022-02-18 02:50:12,916 INFO    Thread-17 :34608 [upload_job.py:push():137] Uploaded file C:\Users\Anirudh\AppData\Local\Temp\tmpunk0q4z7wandb\32cdkg4u-wandb-metadata.json
+2022-02-18 02:50:14,940 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 5
+2022-02-18 02:50:14,940 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:14,940 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:14,940 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-18 02:50:14,940 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:14,941 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-18 02:50:14,941 INFO    SenderThread:34608 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-02-18 02:50:15,045 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:15,936 INFO    SenderThread:34608 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\config.yaml
+2022-02-18 02:50:15,938 INFO    SenderThread:34608 [dir_watcher.py:finish():313] scan: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files
+2022-02-18 02:50:15,938 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\conda-environment.yaml conda-environment.yaml
+2022-02-18 02:50:15,938 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\config.yaml config.yaml
+2022-02-18 02:50:15,938 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\output.log output.log
+2022-02-18 02:50:15,939 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\requirements.txt requirements.txt
+2022-02-18 02:50:15,942 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\wandb-metadata.json wandb-metadata.json
+2022-02-18 02:50:15,944 INFO    SenderThread:34608 [dir_watcher.py:finish():327] scan save: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\wandb-summary.json wandb-summary.json
+2022-02-18 02:50:15,947 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 6
+2022-02-18 02:50:15,947 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:15,948 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:15,948 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-18 02:50:15,950 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:15,951 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-18 02:50:15,951 INFO    SenderThread:34608 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-18 02:50:16,058 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,058 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,169 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,169 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,277 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,277 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,385 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,385 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,494 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,494 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,604 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,604 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,714 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,714 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,778 INFO    Thread-19 :34608 [upload_job.py:push():137] Uploaded file C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\output.log
+2022-02-18 02:50:16,798 INFO    Thread-21 :34608 [upload_job.py:push():137] Uploaded file C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\wandb-summary.json
+2022-02-18 02:50:16,800 INFO    Thread-18 :34608 [upload_job.py:push():137] Uploaded file C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\config.yaml
+2022-02-18 02:50:16,823 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,823 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:16,838 INFO    Thread-20 :34608 [upload_job.py:push():137] Uploaded file C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\files\requirements.txt
+2022-02-18 02:50:16,932 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:16,932 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:17,042 INFO    Thread-11 :34608 [sender.py:transition_state():392] send defer: 7
+2022-02-18 02:50:17,043 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:17,043 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:17,043 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:17,044 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-18 02:50:17,044 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:17,044 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-18 02:50:17,152 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:17,347 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 8
+2022-02-18 02:50:17,347 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:17,348 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:17,348 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-18 02:50:17,349 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:17,349 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-18 02:50:17,349 INFO    SenderThread:34608 [sender.py:transition_state():392] send defer: 9
+2022-02-18 02:50:17,350 DEBUG   SenderThread:34608 [sender.py:send():235] send: final
+2022-02-18 02:50:17,351 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: defer
+2022-02-18 02:50:17,351 DEBUG   SenderThread:34608 [sender.py:send():235] send: footer
+2022-02-18 02:50:17,351 INFO    HandlerThread:34608 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-18 02:50:17,352 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: defer
+2022-02-18 02:50:17,352 INFO    SenderThread:34608 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-18 02:50:17,463 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-18 02:50:17,463 DEBUG   SenderThread:34608 [sender.py:send_request():249] send_request: poll_exit
+2022-02-18 02:50:17,463 INFO    SenderThread:34608 [file_pusher.py:join():182] waiting for file pusher
+2022-02-18 02:50:18,085 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-18 02:50:18,087 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-18 02:50:18,087 DEBUG   HandlerThread:34608 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-18 02:50:18,087 INFO    HandlerThread:34608 [handler.py:finish():739] shutting down handler
+2022-02-18 02:50:18,356 INFO    WriterThread:34608 [datastore.py:close():281] close: C:\Users\Anirudh\test\DQN-Atari\wandb\run-20220218_025009-37k10ygm\run-37k10ygm.wandb
+2022-02-18 02:50:19,092 INFO    SenderThread:34608 [sender.py:finish():1075] shutting down sender
+2022-02-18 02:50:19,092 INFO    SenderThread:34608 [file_pusher.py:finish():177] shutting down file pusher
+2022-02-18 02:50:19,092 INFO    SenderThread:34608 [file_pusher.py:join():182] waiting for file pusher
+2022-02-18 02:50:19,098 INFO    MainThread:34608 [internal.py:handle_exit():79] Internal process exited

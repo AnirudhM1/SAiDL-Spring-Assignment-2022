@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "train_atari.py", line 83, in <module>
+    assert "NoFrameskip" in hyper_params["env"], "Require environment with no frameskip"
+AssertionError: Require environment with no frameskip

@@ -1,0 +1,27 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-02-18T15:24:10.726488",
+    "startedAt": "2022-02-18T15:24:08.615486",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--set-representation",
+        "moco"
+    ],
+    "state": "running",
+    "program": "train_atari.py",
+    "codePath": "train_atari.py",
+    "git": {
+        "remote": "git@github.com:KaleabTessera/DQN-Atari.git",
+        "commit": "52eae794c65b2fe71196d188a8e1f72dab686e62"
+    },
+    "email": "f20200970@goa.bits-pilani.ac.in",
+    "root": "C:/Users/Anirudh/test/DQN-Atari",
+    "host": "Anirudh",
+    "username": "Anirudh",
+    "executable": "C:\\Users\\Anirudh\\anaconda3\\envs\\pytorch\\python.exe"
+}

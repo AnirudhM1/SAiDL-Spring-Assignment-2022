@@ -1,0 +1,16 @@
+Using SimCLR
+Using: cuda
+********************************************************
+steps: 8465
+episodes: 10
+mean 100 episode reward: -20.1
+% time spent exploring: 91
+********************************************************
+Traceback (most recent call last):
+  File "train_atari.py", line 169, in <module>
+    agent.optimise_td_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_simclr.py", line 88, in optimise_td_loss
+    loss = F.smooth_l1_loss(input_q_values, target_q_values) + self.representation_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_simclr.py", line 105, in representation_loss
+    sample = np.array(sample)/255
+KeyboardInterrupt

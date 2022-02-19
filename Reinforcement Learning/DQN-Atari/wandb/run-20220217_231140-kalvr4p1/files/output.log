@@ -1,0 +1,18 @@
+Using SimCLR
+Using: cuda
+********************************************************
+steps: 7951
+episodes: 10
+mean 100 episode reward: -20.6
+% time spent exploring: 92
+********************************************************
+Traceback (most recent call last):
+  File "train_atari.py", line 169, in <module>
+    agent.optimise_td_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_simclr.py", line 88, in optimise_td_loss
+    loss = F.smooth_l1_loss(input_q_values, target_q_values) + self.representation_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_simclr.py", line 126, in representation_loss
+    loss = F.cross_entropy(logits/T, labels)
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\torch\nn\functional.py", line 2846, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument target in method wrapper_nll_loss_forward)

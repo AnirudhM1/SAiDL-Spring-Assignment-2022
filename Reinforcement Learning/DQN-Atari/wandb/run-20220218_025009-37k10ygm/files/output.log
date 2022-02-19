@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\gym\envs\registration.py", line 158, in spec
+    return self.env_specs[id]
+KeyError: 'BreakoutDeterministic-v2'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "train_atari.py", line 84, in <module>
+    env = gym.make(hyper_params["env"])
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\gym\envs\registration.py", line 235, in make
+    return registry.make(id, **kwargs)
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\gym\envs\registration.py", line 128, in make
+    spec = self.spec(path)
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\gym\envs\registration.py", line 185, in spec
+    raise error.DeprecatedEnv(
+gym.error.DeprecatedEnv: Env BreakoutDeterministic-v2 not found (valid versions include ['BreakoutDeterministic-v0', 'BreakoutDeterministic-v4'])

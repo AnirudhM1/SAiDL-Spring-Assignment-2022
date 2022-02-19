@@ -1,0 +1,78 @@
+Using SimCLR
+Using: cuda
+********************************************************
+steps: 7316
+episodes: 10
+mean 100 episode reward: -20.7
+% time spent exploring: 92
+********************************************************
+********************************************************
+steps: 16115
+episodes: 20
+mean 100 episode reward: -20.6
+% time spent exploring: 84
+********************************************************
+********************************************************
+steps: 25556
+episodes: 30
+mean 100 episode reward: -20.3
+% time spent exploring: 74
+********************************************************
+********************************************************
+steps: 36020
+episodes: 40
+mean 100 episode reward: -20.1
+% time spent exploring: 64
+********************************************************
+********************************************************
+steps: 46280
+episodes: 50
+mean 100 episode reward: -20.1
+% time spent exploring: 54
+********************************************************
+********************************************************
+steps: 56403
+episodes: 60
+mean 100 episode reward: -20.0
+% time spent exploring: 44
+********************************************************
+********************************************************
+steps: 65272
+episodes: 70
+mean 100 episode reward: -20.1
+% time spent exploring: 35
+********************************************************
+********************************************************
+steps: 76207
+episodes: 80
+mean 100 episode reward: -20.1
+% time spent exploring: 24
+********************************************************
+********************************************************
+steps: 86224
+episodes: 90
+mean 100 episode reward: -20.2
+% time spent exploring: 14
+********************************************************
+********************************************************
+steps: 95342
+episodes: 100
+mean 100 episode reward: -20.3
+% time spent exploring: 5
+********************************************************
+********************************************************
+steps: 103846
+episodes: 110
+mean 100 episode reward: -20.3
+% time spent exploring: 1
+********************************************************
+Traceback (most recent call last):
+  File "train_atari.py", line 169, in <module>
+    agent.optimise_td_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_simclr.py", line 78, in optimise_td_loss
+    _, max_next_action = self.policy_network(next_states)[0].max(1)
+  File "C:\Users\Anirudh\anaconda3\envs\pytorch\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\model_simclr.py", line 117, in forward
+    encoder_out = self.encoder(x)
+KeyboardInterrupt

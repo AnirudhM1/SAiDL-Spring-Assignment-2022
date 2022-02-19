@@ -1,0 +1,45 @@
+Using MOCO
+Using: cuda
+********************************************************
+steps: 6447
+episodes: 200
+mean 100 episode reward: 0.2
+% time spent exploring: 93
+********************************************************
+********************************************************
+steps: 13013
+episodes: 400
+mean 100 episode reward: 0.3
+% time spent exploring: 87
+********************************************************
+********************************************************
+steps: 19998
+episodes: 600
+mean 100 episode reward: 0.4
+% time spent exploring: 80
+********************************************************
+********************************************************
+steps: 26360
+episodes: 800
+mean 100 episode reward: 0.3
+% time spent exploring: 73
+********************************************************
+********************************************************
+steps: 32555
+episodes: 1000
+mean 100 episode reward: 0.2
+% time spent exploring: 67
+********************************************************
+Traceback (most recent call last):
+  File "train_atari.py", line 169, in <module>
+    agent.optimise_td_loss()
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\agent_moco.py", line 88, in optimise_td_loss
+    states, actions, rewards, next_states, dones = self.memory.sample(self.batch_size)
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\replay_buffer.py", line 57, in sample
+    return self._encode_sample(indices)
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\replay_buffer.py", line 46, in _encode_sample
+    next_states.append(np.array(next_state, copy=False))
+  File "C:\Users\Anirudh\test\DQN-Atari\dqn\wrappers.py", line 206, in __array__
+    out = np.concatenate(self._frames, axis=0)
+  File "<__array_function__ internals>", line 5, in concatenate
+KeyboardInterrupt
